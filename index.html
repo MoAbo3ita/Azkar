@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الأذكار والأدعية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">موقع أذكار</a>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <span id="themeIcon">🌙</span>
+                <span id="themeText">الوضع الداكن</span>
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="nav-btn active">الرئيسية</a>
+            <a href="morning.html" class="nav-btn">أذكار الصباح</a>
+            <a href="evening.html" class="nav-btn">أذكار المساء</a>
+            <a href="tasbeeh.html" class="nav-btn">تسابيح</a>
+            <a href="rosary.html" class="nav-btn">المسبحة الإلكترونية</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="home-content">
+            <h1 class="welcome-title">أهلاً بك في موقع أذكار</h1>
+            <p class="welcome-text">
+                موقع متكامل لأذكار الصباح والمساء والتسابيح مع مسبحة إلكترونية تفاعلية
+                <br>
+                اختر القسم الذي تريده من القائمة أدناه
+            </p>
+            
+            <div class="sections-grid">
+                <a href="morning.html" class="section-card">
+                    <div class="section-icon">🌅</div>
+                    <h3>أذكار الصباح</h3>
+                    <p>31 ذكرًا لبداية يومك بالبركة</p>
+                </a>
+                
+                <a href="evening.html" class="section-card">
+                    <div class="section-icon">🌙</div>
+                    <h3>أذكار المساء</h3>
+                    <p>31 ذكرًا لختام يومك بالخير</p>
+                </a>
+                
+                <a href="tasbeeh.html" class="section-card">
+                    <div class="section-icon">📿</div>
+                    <h3>التسابيح</h3>
+                    <p>17 ذكرًا متنوعًا للثواب العظيم</p>
+                </a>
+                
+                <a href="rosary.html" class="section-card">
+                    <div class="section-icon">🤲</div>
+                    <h3>المسبحة الإلكترونية</h3>
+                    <p>مسبحة رقمية مع عدة أذكار</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">صلى الله على نبينا محمد ﷺ</p>
+            <p class="copyright">© 2026 By Mohamed Hany</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

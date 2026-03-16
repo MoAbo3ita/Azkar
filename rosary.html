@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المسبحة الإلكترونية - موقع الأذكار</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">موقع الأذكار</a>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <span id="themeIcon">🌙</span>
+                <span id="themeText">الوضع الداكن</span>
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="nav-btn">الرئيسية</a>
+            <a href="morning.html" class="nav-btn">أذكار الصباح</a>
+            <a href="evening.html" class="nav-btn">أذكار المساء</a>
+            <a href="tasbeeh.html" class="nav-btn">تسابيح</a>
+            <a href="rosary.html" class="nav-btn active">المسبحة الإلكترونية</a>
+        </div>
+    </nav>
+
+    <main>
+        <h2 class="section-title">المسبحة الإلكترونية</h2>
+        <div class="rosary-container">
+            <div class="dhikr-selector">
+                <button class="dhikr-option active" onclick="selectDhikr('سبحان الله')">سبحان الله</button>
+                <button class="dhikr-option" onclick="selectDhikr('الحمد لله')">الحمد لله</button>
+                <button class="dhikr-option" onclick="selectDhikr('الله أكبر')">الله أكبر</button>
+                <button class="dhikr-option" onclick="selectDhikr('لا إله إلا الله')">لا إله إلا الله</button>
+                <button class="dhikr-option" onclick="selectDhikr('أستغفر الله')">أستغفر الله</button>
+                <button class="dhikr-option" onclick="selectDhikr('اللهم صل على محمد')">اللهم صل على محمد</button>
+            </div>
+            <div class="rosary-display">
+                <div class="rosary-count" id="rosaryCount">0</div>
+                <div class="rosary-label" id="rosaryLabel">سبحان الله</div>
+            </div>
+            <div class="rosary-controls">
+                <button class="rosary-btn count" onclick="incrementRosary()">+ عد</button>
+                <button class="rosary-btn reset" onclick="resetRosary()">🔄 إعادة</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">صلى الله على نبينا محمد ﷺ</p>
+            <p class="copyright">© 2026 By Mohamed Hany</p>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
